@@ -10,26 +10,27 @@ public class Course {
     
     @Id
     private Long id;
-    private String code;
-    private String title;
-    private Double credit;
-    private String type;
+    private String courseCode;
+    private String courseTitle;
+    private Double courseCredit;
+    private String courseType;
     private String semester;
     private Long departmentId;
-    private String teacher;
+    private String courseTeacher;
 
     public Course() {
     }
-    public Course(Long id, String code, String title, Double credit, String type, 
-                 String semester, Long departmentId, String teacher) {
+
+    public Course(Long id, String courseCode, String courseTitle, Double courseCredit, String courseType, 
+                 String semester, Long departmentId, String courseTeacher) {
         this.id = id;
-        this.code = code;
-        this.title = title;
-        this.credit = credit;
-        this.type = type;
+        this.courseCode = courseCode;
+        this.courseTitle = courseTitle;
+        this.courseCredit = courseCredit;
+        this.courseType = courseType;
         this.semester = semester;
         this.departmentId = departmentId;
-        this.teacher = teacher;
+        this.courseTeacher = courseTeacher;
     }
 
     public Long getId() {
@@ -40,36 +41,36 @@ public class Course {
         this.id = id;
     }
 
-    public String getCode() {
-        return code;
+    public String getCourseCode() {
+        return courseCode;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 
-    public String getTitle() {
-        return title;
+    public String getCourseTitle() {
+        return courseTitle;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setCourseTitle(String courseTitle) {
+        this.courseTitle = courseTitle;
     }
 
-    public Double getCredit() {
-        return credit;
+    public Double getCourseCredit() {
+        return courseCredit;
     }
 
-    public void setCredit(Double credit) {
-        this.credit = credit;
+    public void setCourseCredit(Double courseCredit) {
+        this.courseCredit = courseCredit;
     }
 
-    public String getType() {
-        return type;
+    public String getCourseType() {
+        return courseType;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setCourseType(String courseType) {
+        this.courseType = courseType;
     }
 
     public String getSemester() {
@@ -88,26 +89,25 @@ public class Course {
         this.departmentId = departmentId;
     }
 
-    public String getTeacher() {
-        return teacher;
+    public String getCourseTeacher() {
+        return courseTeacher;
     }
 
-    public void setTeacher(String teacher) {
-        this.teacher = teacher;
+    public void setCourseTeacher(String courseTeacher) {
+        this.courseTeacher = courseTeacher;
     }
 
     @Override
     public String toString() {
         return "Course{" +
                 "id=" + id +
-                ", code='" + code + '\'' +
-                ", title='" + title + '\'' +
-                ", credit=" + credit +
-                ", type='" + type + '\'' +
+                ", courseCode='" + courseCode + '\'' +
+                ", courseTitle='" + courseTitle + '\'' +
+                ", courseCredit=" + courseCredit +
+                ", courseType='" + courseType + '\'' +
                 ", semester='" + semester + '\'' +
                 ", departmentId=" + departmentId +
-                ", teacher='" + teacher + '\'' +
+                ", courseTeacher='" + courseTeacher + '\'' +
                 '}';
     }
-
 }
