@@ -101,13 +101,13 @@ public class Course {
     public String toString() {
         return "Course{" +
                 "id=" + id +
-                ", courseCode:'" + courseCode + '\'' +
-                ", courseTitle:'" + courseTitle + '\'' +
-                ", courseCredit:" + courseCredit +
-                ", courseType:" + courseType + '\'' +
-                ", semester:'" + semester + '\'' +
-                ", departmentId=:" + departmentId + '\'' +
-                ", courseTeacher='" + courseTeacher +
+                ", courseCode='" + courseCode + '\'' +
+                ", courseTitle='" + courseTitle + '\'' +
+                ", courseCredit=" + courseCredit +
+                ", courseType='" + courseType + '\'' +
+                ", semester='" + semester + '\'' +
+                ", departmentId=" + departmentId +
+                ", courseTeacher='" + courseTeacher + '\'' +
                 '}';
     }
 }
